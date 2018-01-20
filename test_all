@@ -1,0 +1,6 @@
+#!/bin/bash
+./test_benchmarks
+./test_easy
+./test_medium
+./test_hard
+./test_sudoku

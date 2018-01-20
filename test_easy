@@ -1,0 +1,9 @@
+#!/bin/bash
+make
+for benchmark in 1_easy/*.cnf; do
+        echo 
+	echo $benchmark
+	time ./yasat "$benchmark"
+done
+rm 1_easy/*.sat
+make clean

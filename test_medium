@@ -1,0 +1,8 @@
+#!/bin/bash
+make
+for benchmark in 2_medium/*.cnf; do
+	echo $benchmark
+	time ./yasat "$benchmark"
+done
+rm 2_medium/*.sat
+make clean

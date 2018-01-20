@@ -1,0 +1,9 @@
+#!/bin/bash
+make
+taskset -c 8-15 /usr/bin/nice -n 20 
+for benchmark in Sample_benchmarks_for_Milestone_2/*.cnf; do
+	echo $benchmark
+	time ./yasat "$benchmark"
+done
+rm Sample_benchmarks_for_Milestone_2/*.sat
+make clean
