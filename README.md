@@ -4,6 +4,11 @@ Multithread simulated annealing mini SAT solver
 1. Usage
     1. to compile: make
     1. to test some cnf file: ./yasat <filename.cnf>
+    1. to test all the following benchmarks ./test_all
+    1. to test benchmark in milestone 2 ./test_benchmarks
+    1. to test 1_easy benchmark ./test_easy
+    1. to test 2_medium benchmark ./test_medium
+    1. to test 3_hard benchmark ./test_hard
 1. Features
     1. VSIDS score strategy with integer type, score decaying
     1. BCP with two literal watching
